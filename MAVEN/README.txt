@@ -1,0 +1,4 @@
+- install JAVA SDK 1.6+
+- install GOOGLE APP ENGINE JAVA SDK 1.6.0+
+- install ANDROID SDK R07+
+- install MAVEN 3.0.3+

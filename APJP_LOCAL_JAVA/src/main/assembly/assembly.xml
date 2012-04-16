@@ -1,0 +1,34 @@
+<assembly>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>/</outputDirectory>
+		</dependencySet>
+	</dependencySets>
+	<fileSets>
+		<fileSet>
+			<directory>src/main/assembly/scripts</directory>
+			<includes>
+				<include>APJP_LOCAL.bat</include>
+				<include>APJP_LOCAL.sh</include>
+				<include>APJP_LOCAL_UI.bat</include>
+				<include>APJP_LOCAL_UI.sh</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+			<filtered>true</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/assembly/scripts</directory>
+			<includes>
+				<include>APJP_LOCAL.png</include>
+				<include>APJP_LOCAL.properties</include>
+				<include>README.txt</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+	</fileSets>
+</assembly>

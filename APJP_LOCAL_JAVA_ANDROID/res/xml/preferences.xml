@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditTextPreference android:name="APJP_KEY"
+		android:summary=""
+		android:title="APJP_KEY" android:key="APJP_KEY" android:defaultValue=""/>
+	<PreferenceScreen android:title="APJP_LOCAL_PROXY_SERVER">
+		<EditTextPreference android:name="APJP_LOCAL_PROXY_SERVER_ADDRESS"
+			android:summary=""
+			android:title="ADDRESS" android:key="APJP_LOCAL_PROXY_SERVER_ADDRESS" android:defaultValue="127.0.0.1"/>
+		<EditTextPreference android:name="APJP_LOCAL_PROXY_SERVER_PORT"
+			android:summary=""
+			android:title="PORT" android:key="APJP_LOCAL_PROXY_SERVER_PORT" android:defaultValue="10000"/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_LOCAL_HTTP_PROXY_SERVER">
+		<EditTextPreference android:name="APJP_LOCAL_HTTP_PROXY_SERVER_ADDRESS"
+			android:summary=""
+			android:title="ADDRESS" android:key="APJP_LOCAL_HTTP_PROXY_SERVER_ADDRESS" android:defaultValue="127.0.0.1"/>
+		<EditTextPreference android:name="APJP_LOCAL_HTTP_PROXY_SERVER_PORT"
+			android:summary=""
+			android:title="PORT" android:key="APJP_LOCAL_HTTP_PROXY_SERVER_PORT" android:defaultValue="10100"/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_LOCAL_HTTP_SERVER">
+		<EditTextPreference android:name="APJP_LOCAL_HTTP_SERVER_ADDRESS"
+			android:summary=""
+			android:title="ADDRESS" android:key="APJP_LOCAL_HTTP_SERVER_ADDRESS" android:defaultValue="127.0.0.1"/>
+		<EditTextPreference android:name="APJP_LOCAL_HTTP_SERVER_PORT"
+			android:summary=""
+			android:title="PORT" android:key="APJP_LOCAL_HTTP_SERVER_PORT" android:defaultValue="10200"/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTP_SERVER_1">
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_1_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTP_SERVER_2">
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_2_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTP_SERVER_3">
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_3_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+		<PreferenceScreen android:title="APJP_REMOTE_HTTP_SERVER_4">
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_4_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTP_SERVER_5">
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_5_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTP_SERVER_6">
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_6_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTP_SERVER_7">
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_7_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTP_SERVER_8">
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_8_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTP_SERVER_9">
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_9_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTP_SERVER_10">
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTP_SERVER_10_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_LOCAL_HTTPS_PROXY_SERVER">
+		<EditTextPreference android:name="APJP_LOCAL_HTTPS_PROXY_SERVER_ADDRESS"
+			android:summary=""
+			android:title="ADDRESS" android:key="APJP_LOCAL_HTTPS_PROXY_SERVER_ADDRESS" android:defaultValue="127.0.0.1"/>
+		<EditTextPreference android:name="APJP_LOCAL_HTTPS_PROXY_SERVER_PORT"
+			android:summary=""
+			android:title="PORT" android:key="APJP_LOCAL_HTTPS_PROXY_SERVER_PORT" android:defaultValue="10300"/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_LOCAL_HTTPS_SERVER">
+		<EditTextPreference android:name="APJP_LOCAL_HTTPS_SERVER_ADDRESS"
+			android:summary=""
+			android:title="ADDRESS" android:key="APJP_LOCAL_HTTPS_SERVER_ADDRESS" android:defaultValue="127.0.0.1"/>
+		<EditTextPreference android:name="APJP_LOCAL_HTTPS_SERVER_PORT"
+			android:summary=""
+			android:title="PORT" android:key="APJP_LOCAL_HTTPS_SERVER_PORT" android:defaultValue="10400"/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTPS_SERVER_1">
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_1_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTPS_SERVER_2">
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_2_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTPS_SERVER_3">
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_3_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+		<PreferenceScreen android:title="APJP_REMOTE_HTTPS_SERVER_4">
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_4_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTPS_SERVER_5">
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_5_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTPS_SERVER_6">
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_6_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTPS_SERVER_7">
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_7_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTPS_SERVER_8">
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_8_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTPS_SERVER_9">
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_9_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_REMOTE_HTTPS_SERVER_10">
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_URL"
+			android:summary=""
+			android:title="REQUEST_URL" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_URL" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_1_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_1_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_1_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_1_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_1_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_2_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_2_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_2_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_2_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_2_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_3_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_3_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_3_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_3_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_3_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_4_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_4_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_4_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_4_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_4_VALUE" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_5_KEY"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_KEY" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_5_KEY" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_5_VALUE"
+			android:summary=""
+			android:title="REQUEST_PROPERTY_5_VALUE" android:key="APJP_REMOTE_HTTPS_SERVER_10_REQUEST_PROPERTY_5_VALUE" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_HTTP_PROXY_SERVER">
+		<EditTextPreference android:name="APJP_HTTP_PROXY_SERVER_ADDRESS"
+			android:summary=""
+			android:title="ADDRESS" android:key="APJP_HTTP_PROXY_SERVER_ADDRESS" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_HTTP_PROXY_SERVER_PORT"
+			android:summary=""
+			android:title="PORT" android:key="APJP_HTTP_PROXY_SERVER_PORT" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_HTTP_PROXY_SERVER_USERNAME"
+			android:summary=""
+			android:title="USERNAME" android:key="APJP_HTTP_PROXY_SERVER_USERNAME" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_HTTP_PROXY_SERVER_PASSWORD"
+			android:summary=""
+			android:title="PASSWORD" android:key="APJP_HTTP_PROXY_SERVER_PASSWORD" android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="APJP_HTTPS_PROXY_SERVER">
+		<EditTextPreference android:name="APJP_HTTPS_PROXY_SERVER_ADDRESS"
+			android:summary=""
+			android:title="ADDRESS" android:key="APJP_HTTPS_PROXY_SERVER_ADDRESS" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_HTTPS_PROXY_SERVER_PORT"
+			android:summary=""
+			android:title="PORT" android:key="APJP_HTTPS_PROXY_SERVER_PORT" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_HTTPS_PROXY_SERVER_USERNAME"
+			android:summary=""
+			android:title="USERNAME" android:key="APJP_HTTPS_PROXY_SERVER_USERNAME" android:defaultValue=""/>
+		<EditTextPreference android:name="APJP_HTTPS_PROXY_SERVER_PASSWORD"
+			android:summary=""
+			android:title="PASSWORD" android:key="APJP_HTTPS_PROXY_SERVER_PASSWORD" android:defaultValue=""/>
+	</PreferenceScreen>
+</PreferenceScreen>
