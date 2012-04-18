@@ -1,6 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
+	<parent>
+		<groupId>APJP</groupId>
+		<artifactId>APJP</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	
 	<groupId>APJP</groupId>
 	<artifactId>APJP_REMOTE_JAVA_APPENGINE</artifactId>
 	<version>1.0.0</version>
@@ -23,13 +29,15 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>${project.name}</id>
+						<id>APJP_REMOTE_JAVA_APPENGINE</id>
 						<phase>package</phase>
 						<goals>
-							<goal>attached</goal>
+							<goal>single</goal>
 						</goals>
 						<configuration>
 							<finalName>${project.name}-${project.version}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<attach>true</attach>
 							<descriptors>
 								<descriptor>src/main/assembly/assembly.xml</descriptor>
 							</descriptors>
@@ -64,7 +72,7 @@
 		<dependency>
 			<groupId>net.kindleit</groupId>
 			<artifactId>gae-runtime</artifactId>
-			<version>1.6.2.1</version>
+			<version>1.6.4</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>

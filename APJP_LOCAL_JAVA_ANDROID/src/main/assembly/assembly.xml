@@ -1,4 +1,5 @@
 <assembly>
+	<id>APJP_LOCAL_JAVA_ANDROID</id>
 	<formats>
 		<format>zip</format>
 	</formats>

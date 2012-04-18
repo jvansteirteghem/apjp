@@ -1,13 +1,9 @@
 <assembly>
+	<id>APJP_REMOTE_PHP</id>
 	<formats>
 		<format>zip</format>
 	</formats>
 	<includeBaseDirectory>false</includeBaseDirectory>
-	<dependencySets>
-		<dependencySet>
-			<outputDirectory>/</outputDirectory>
-		</dependencySet>
-	</dependencySets>
 	<fileSets>
 		<fileSet>
 			<directory>src/main/php</directory>

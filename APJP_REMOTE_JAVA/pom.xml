@@ -1,6 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
+	<parent>
+		<groupId>APJP</groupId>
+		<artifactId>APJP</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	
 	<groupId>APJP</groupId>
 	<artifactId>APJP_REMOTE_JAVA</artifactId>
 	<version>1.0.0</version>
@@ -23,39 +29,45 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>${project.name}</id>
+						<id>APJP_REMOTE_JAVA</id>
 						<phase>package</phase>
 						<goals>
-							<goal>attached</goal>
+							<goal>single</goal>
 						</goals>
 						<configuration>
 							<finalName>${project.name}-${project.version}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<attach>true</attach>
 							<descriptors>
 								<descriptor>src/main/assembly/assembly.xml</descriptor>
 							</descriptors>
 						</configuration>
 					</execution>
 					<execution>
-						<id>${project.name}_DOTCLOUD</id>
+						<id>APJP_REMOTE_JAVA_DOTCLOUD</id>
 						<phase>package</phase>
 						<goals>
-							<goal>attached</goal>
+							<goal>single</goal>
 						</goals>
 						<configuration>
 							<finalName>${project.name}_DOTCLOUD-${project.version}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<attach>false</attach>
 							<descriptors>
 								<descriptor>src/main/assembly/DOTCLOUD/assembly.xml</descriptor>
 							</descriptors>
 						</configuration>
 					</execution>
 					<execution>
-						<id>${project.name}_HEROKU</id>
+						<id>APJP_REMOTE_JAVA_HEROKU</id>
 						<phase>package</phase>
 						<goals>
-							<goal>attached</goal>
+							<goal>single</goal>
 						</goals>
 						<configuration>
 							<finalName>${project.name}_HEROKU-${project.version}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<attach>false</attach>
 							<descriptors>
 								<descriptor>src/main/assembly/HEROKU/assembly.xml</descriptor>
 							</descriptors>

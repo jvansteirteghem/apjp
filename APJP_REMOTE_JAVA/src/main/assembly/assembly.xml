@@ -1,4 +1,5 @@
 <assembly>
+	<id>APJP_REMOTE_JAVA</id>
 	<formats>
 		<format>zip</format>
 	</formats>
