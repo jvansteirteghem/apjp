@@ -1,11 +1,11 @@
 PRE-INSTALLATION
 ----------------
 - create GOOGLE APP ENGINE application (https://appengine.google.com)
-- install GOOGLE APP ENGINE JAVA SDK (https://code.google.com/appengine/)
+- install GOOGLE APP ENGINE PYTHON SDK (https://code.google.com/appengine/)
 
 INSTALLATION
 ------------
-- open war\WEB-INF\appengine-web.xml
+- open app.yaml
 	- configure
 		- application-id
 		- APJP_KEY == generated key
@@ -30,7 +30,7 @@ INSTALLATION
 		- APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_5_KEY
 		- APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_5_VALUE
 - install APJP FOR GOOGLE APP ENGINE
-	- execute GOOGLE APP ENGINE JAVA SDK\bin\appcfg.cmd update APJP FOR GOOGLE APP ENGINE\war\
+	- execute GOOGLE APP ENGINE PYTHON SDK\appcfg.py update APJP FOR GOOGLE APP ENGINE\
 	- enter EMAIL
 	- enter PASSWORD
 

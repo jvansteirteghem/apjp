@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>APJP</groupId>
+		<artifactId>APJP</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	
+	<groupId>APJP</groupId>
+	<artifactId>APJP_REMOTE_PYTHON_APPENGINE</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>APJP_REMOTE_PYTHON_APPENGINE</name>
+	
+	<properties>
+		<APJP_REMOTE_PYTHON_APPENGINE_NAME>APJP_REMOTE_PYTHON_APPENGINE</APJP_REMOTE_PYTHON_APPENGINE_NAME>
+		<APJP_REMOTE_PYTHON_APPENGINE_VERSION>1.0.0-SNAPSHOT</APJP_REMOTE_PYTHON_APPENGINE_VERSION>
+	</properties>
+	
+	<build>
+		<finalName>${APJP_REMOTE_PYTHON_APPENGINE_NAME}-${APJP_REMOTE_PYTHON_APPENGINE_VERSION}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>APJP_REMOTE_PYTHON_APPENGINE</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<finalName>${APJP_REMOTE_PYTHON_APPENGINE_NAME}-${APJP_REMOTE_PYTHON_APPENGINE_VERSION}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<attach>true</attach>
+							<descriptors>
+								<descriptor>src/main/assembly/APJP_REMOTE_PYTHON_APPENGINE.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
