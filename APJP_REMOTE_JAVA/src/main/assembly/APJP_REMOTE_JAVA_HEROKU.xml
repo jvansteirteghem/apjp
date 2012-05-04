@@ -7,11 +7,22 @@
 	<fileSets>
 		<fileSet>
 			<directory>src</directory>
+			<excludes>
+				<exclude>**/**/assembly/</exclude>
+			</excludes>
 			<outputDirectory>/src</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
-			<directory>src/main/assembly/HEROKU/scripts</directory>
+			<directory>src/main/assembly/APJP_REMOTE_JAVA_HEROKU</directory>
+			<includes>
+				<include>pom.xml</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+			<filtered>true</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/assembly/APJP_REMOTE_JAVA_HEROKU</directory>
 			<includes>
 				<include>Procfile</include>
 				<include>README.txt</include>

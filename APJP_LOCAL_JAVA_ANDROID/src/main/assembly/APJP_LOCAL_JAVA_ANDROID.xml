@@ -8,13 +8,13 @@
 		<fileSet>
 			<directory>target</directory>
 			<includes>
-				<include>${project.name}-${project.version}.apk</include>
+				<include>${APJP_LOCAL_JAVA_ANDROID_NAME}-${APJP_LOCAL_JAVA_ANDROID_VERSION}.apk</include>
 			</includes>
 			<outputDirectory>/</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
-			<directory>src/main/assembly/scripts</directory>
+			<directory>src/main/assembly/APJP_LOCAL_JAVA_ANDROID</directory>
 			<includes>
 				<include>README.txt</include>
 			</includes>

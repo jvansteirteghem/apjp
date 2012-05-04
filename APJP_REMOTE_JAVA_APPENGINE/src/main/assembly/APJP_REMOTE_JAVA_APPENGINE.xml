@@ -6,12 +6,12 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
 		<fileSet>
-			<directory>target/${project.name}-${project.version}</directory>
+			<directory>target/${APJP_REMOTE_JAVA_APPENGINE_NAME}-${APJP_REMOTE_JAVA_APPENGINE_VERSION}</directory>
 			<outputDirectory>/war</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
-			<directory>src/main/assembly/scripts</directory>
+			<directory>src/main/assembly/APJP_REMOTE_JAVA_APPENGINE</directory>
 			<includes>
 				<include>README.txt</include>
 			</includes>

@@ -11,7 +11,7 @@
 	</dependencySets>
 	<fileSets>
 		<fileSet>
-			<directory>src/main/assembly/DOTCLOUD/scripts</directory>
+			<directory>src/main/assembly/APJP_REMOTE_JAVA_DOTCLOUD</directory>
 			<includes>
 				<include>dotcloud.yml</include>
 				<include>README.txt</include>

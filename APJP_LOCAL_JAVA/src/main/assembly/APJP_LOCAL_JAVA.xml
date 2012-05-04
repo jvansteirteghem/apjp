@@ -1,5 +1,5 @@
 <assembly>
-	<id>APJP_KEY_JAVA</id>
+	<id>APJP_LOCAL_JAVA</id>
 	<formats>
 		<format>zip</format>
 	</formats>
@@ -11,17 +11,21 @@
 	</dependencySets>
 	<fileSets>
 		<fileSet>
-			<directory>src/main/assembly/scripts</directory>
+			<directory>src/main/assembly/APJP_LOCAL_JAVA</directory>
 			<includes>
-				<include>APJP_KEY.bat</include>
-				<include>APJP_KEY.sh</include>
+				<include>APJP_LOCAL.bat</include>
+				<include>APJP_LOCAL.sh</include>
+				<include>APJP_LOCAL_UI.bat</include>
+				<include>APJP_LOCAL_UI.sh</include>
 			</includes>
 			<outputDirectory>/</outputDirectory>
 			<filtered>true</filtered>
 		</fileSet>
 		<fileSet>
-			<directory>src/main/assembly/scripts</directory>
+			<directory>src/main/assembly/APJP_LOCAL_JAVA</directory>
 			<includes>
+				<include>APJP_LOCAL.png</include>
+				<include>APJP_LOCAL.properties</include>
 				<include>README.txt</include>
 			</includes>
 			<outputDirectory>/</outputDirectory>

@@ -17,7 +17,7 @@
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
-			<directory>src/main/assembly/scripts</directory>
+			<directory>src/main/assembly/APJP_REMOTE_PHP</directory>
 			<includes>
 				<include>README.txt</include>
 			</includes>

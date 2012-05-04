@@ -11,7 +11,7 @@
 	</dependencySets>
 	<fileSets>
 		<fileSet>
-			<directory>src/main/assembly/scripts</directory>
+			<directory>src/main/assembly/APJP_REMOTE_JAVA</directory>
 			<includes>
 				<include>README.txt</include>
 			</includes>

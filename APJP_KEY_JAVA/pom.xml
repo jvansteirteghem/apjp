@@ -4,17 +4,22 @@
 	<parent>
 		<groupId>APJP</groupId>
 		<artifactId>APJP</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	
 	<groupId>APJP</groupId>
 	<artifactId>APJP_KEY_JAVA</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>APJP_KEY_JAVA</name>
 	
+	<properties>
+		<APJP_KEY_JAVA_NAME>APJP_KEY_JAVA</APJP_KEY_JAVA_NAME>
+		<APJP_KEY_JAVA_VERSION>1.0.0-SNAPSHOT</APJP_KEY_JAVA_VERSION>
+	</properties>
+	
 	<build>
-		<finalName>${project.name}-${project.version}</finalName>
+		<finalName>${APJP_KEY_JAVA_NAME}-${APJP_KEY_JAVA_VERSION}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -47,11 +52,11 @@
 							<goal>single</goal>
 						</goals>
 						<configuration>
-							<finalName>${project.name}-${project.version}</finalName>
+							<finalName>${APJP_KEY_JAVA_NAME}-${APJP_KEY_JAVA_VERSION}</finalName>
 							<appendAssemblyId>false</appendAssemblyId>
 							<attach>true</attach>
 							<descriptors>
-								<descriptor>src/main/assembly/assembly.xml</descriptor>
+								<descriptor>src/main/assembly/APJP_KEY_JAVA.xml</descriptor>
 							</descriptors>
 						</configuration>
 					</execution>
