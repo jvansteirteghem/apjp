@@ -1,0 +1,27 @@
+<assembly>
+	<id>APJP_REMOTE_PYTHON</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+			<directory>src/main/python</directory>
+			<includes>
+				<include>APJP.py</include>
+				<include>APJP_HTTP.py</include>
+				<include>APJP_HTTPS.py</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/assembly/APJP_REMOTE_PYTHON</directory>
+			<includes>
+				<include>README.txt</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+	</fileSets>
+</assembly>

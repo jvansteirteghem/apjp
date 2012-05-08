@@ -76,7 +76,7 @@ def application(environ, start_response):
       http_request_method = http_request_header_values1[0]
       http_request_url = http_request_header_values1[1]
     
-    http_connection = HTTPConnection(http_request_address, http_request_port, False, 60)
+    http_connection = HTTPConnection(http_request_address, http_request_port, False)
     http_connection.request(http_request_method, http_request_url, http_request_body, http_request_headers)
     http_response = http_connection.getresponse()
     
@@ -92,25 +92,7 @@ def application(environ, start_response):
     http_response_headers = http_response.getheaders()
     
     for (http_response_header_key, http_response_header_value) in http_response_headers:
-      if http_response_header_key.upper() == 'Set-Cookie'.upper():
-        http_response_header_values = http_response_header_value.split(', ')
-        http_response_header_value1 = ''
-        for http_response_header_value2 in http_response_header_values:
-          if http_response_header_value1 == '':
-            http_response_header_value1 = http_response_header_value2
-          else:
-            http_response_header_values2 = http_response_header_value2.split(';')
-            http_response_header_value3 = http_response_header_values2[0]
-            http_response_header_values3 = http_response_header_value3.split(' ')
-            http_response_header_values3_length = len(http_response_header_values3)
-            if http_response_header_values3_length == 3:
-              http_response_header_value1 = http_response_header_value1 + ', ' + http_response_header_value2
-            else:
-              http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value1 + '\r\n')
-              http_response_header_value1 = http_response_header_value2
-        http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value1 + '\r\n')
-      else:
-        http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value + '\r\n')
+      http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value + '\r\n')
     
     http_response_header = http_response_header + cipher.encrypt('\r\n')
     

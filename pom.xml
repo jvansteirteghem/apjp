@@ -14,6 +14,7 @@
 		<module>APJP_REMOTE_JAVA</module>
 		<module>APJP_REMOTE_JAVA_APPENGINE</module>
 		<module>APJP_REMOTE_PHP</module>
+		<module>APJP_REMOTE_PYTHON</module>
 		<module>APJP_REMOTE_PYTHON_APPENGINE</module>
 	</modules>
 	
