@@ -3,11 +3,15 @@ from httplib import HTTPSConnection
 from webob import Request
 from webob import Response
 
+APJP_KEY = ''
+APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_KEY = ['', '', '', '', '']
+APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_VALUE = ['', '', '', '', '']
+
 def application(environ, start_response):
   request = Request(environ)
   
   def http_response_body_generator():
-    decipher = ARC4.new(environ['APJP_KEY'])
+    decipher = ARC4.new(APJP_KEY)
     
     http_request_header = ''
     
@@ -80,7 +84,7 @@ def application(environ, start_response):
     https_connection.request(http_request_method, http_request_url, http_request_body, http_request_headers)
     http_response = https_connection.getresponse()
     
-    cipher = ARC4.new(environ['APJP_KEY'])
+    cipher = ARC4.new(APJP_KEY)
     
     http_response_header = ''
     
@@ -109,10 +113,10 @@ def application(environ, start_response):
   
   http_response_headers = []
   
-  i = 1
-  while i <= 5:
-    if environ['APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_' + str(i) + '_KEY'] != '':
-      http_response_headers.append((environ['APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_' + str(i) + '_KEY'], environ['APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_' + str(i) + '_VALUE']))
+  i = 0
+  while i < 5:
+    if APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_KEY[i] != '':
+      http_response_headers.append((APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_KEY[i], APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_VALUE[i]))
     i = i + 1
   
   response = Response(None, None, http_response_headers, http_response_body_generator(), request)

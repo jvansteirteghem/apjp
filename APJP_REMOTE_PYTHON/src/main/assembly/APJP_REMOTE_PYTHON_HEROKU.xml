@@ -1,5 +1,5 @@
 <assembly>
-	<id>APJP_REMOTE_PYTHON_APPENGINE</id>
+	<id>APJP_REMOTE_PYTHON_HEROKU</id>
 	<formats>
 		<format>zip</format>
 	</formats>
@@ -24,9 +24,10 @@
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
-			<directory>src/main/assembly/APJP_REMOTE_PYTHON_APPENGINE</directory>
+			<directory>src/main/assembly/APJP_REMOTE_PYTHON_HEROKU</directory>
 			<includes>
-				<include>app.yaml</include>
+				<include>Procfile</include>
+				<include>requirements.txt</include>
 				<include>README.txt</include>
 			</includes>
 			<outputDirectory>/</outputDirectory>

@@ -8,11 +8,19 @@
 		<fileSet>
 			<directory>src/main/python</directory>
 			<includes>
-				<include>APJP.py</include>
-				<include>APJP_HTTP.py</include>
-				<include>APJP_HTTPS.py</include>
+				<include>wsgi.py</include>
 			</includes>
 			<outputDirectory>/</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/python/APJP</directory>
+			<includes>
+				<include>__init__.py</include>
+				<include>HTTP.py</include>
+				<include>HTTPS.py</include>
+			</includes>
+			<outputDirectory>/APJP</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>

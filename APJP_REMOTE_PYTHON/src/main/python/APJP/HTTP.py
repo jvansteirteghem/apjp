@@ -3,11 +3,15 @@ from httplib import HTTPConnection
 from webob import Request
 from webob import Response
 
+APJP_KEY = ''
+APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_KEY = ['', '', '', '', '']
+APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_VALUE = ['', '', '', '', '']
+
 def application(environ, start_response):
   request = Request(environ)
   
   def http_response_body_generator():
-    decipher = ARC4.new(environ['APJP_KEY'])
+    decipher = ARC4.new(APJP_KEY)
     
     http_request_header = ''
     
@@ -76,11 +80,11 @@ def application(environ, start_response):
       http_request_method = http_request_header_values1[0]
       http_request_url = http_request_header_values1[1]
     
-    http_connection = HTTPConnection(http_request_address, http_request_port, False, 60)
+    http_connection = HTTPConnection(http_request_address, http_request_port, False)
     http_connection.request(http_request_method, http_request_url, http_request_body, http_request_headers)
     http_response = http_connection.getresponse()
     
-    cipher = ARC4.new(environ['APJP_KEY'])
+    cipher = ARC4.new(APJP_KEY)
     
     http_response_header = ''
     
@@ -92,25 +96,7 @@ def application(environ, start_response):
     http_response_headers = http_response.getheaders()
     
     for (http_response_header_key, http_response_header_value) in http_response_headers:
-      if http_response_header_key.upper() == 'Set-Cookie'.upper():
-        http_response_header_values = http_response_header_value.split(', ')
-        http_response_header_value1 = ''
-        for http_response_header_value2 in http_response_header_values:
-          if http_response_header_value1 == '':
-            http_response_header_value1 = http_response_header_value2
-          else:
-            http_response_header_values2 = http_response_header_value2.split(';')
-            http_response_header_value3 = http_response_header_values2[0]
-            http_response_header_values3 = http_response_header_value3.split(' ')
-            http_response_header_values3_length = len(http_response_header_values3)
-            if http_response_header_values3_length == 3:
-              http_response_header_value1 = http_response_header_value1 + ', ' + http_response_header_value2
-            else:
-              http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value1 + '\r\n')
-              http_response_header_value1 = http_response_header_value2
-        http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value1 + '\r\n')
-      else:
-        http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value + '\r\n')
+      http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value + '\r\n')
     
     http_response_header = http_response_header + cipher.encrypt('\r\n')
     
@@ -127,10 +113,10 @@ def application(environ, start_response):
   
   http_response_headers = []
   
-  i = 1
-  while i <= 5:
-    if environ['APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_' + str(i) + '_KEY'] != '':
-      http_response_headers.append((environ['APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_' + str(i) + '_KEY'], environ['APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_' + str(i) + '_VALUE']))
+  i = 0
+  while i < 5:
+    if APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_KEY[i] != '':
+      http_response_headers.append((APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_KEY[i], APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_VALUE[i]))
     i = i + 1
   
   response = Response(None, None, http_response_headers, http_response_body_generator(), request)

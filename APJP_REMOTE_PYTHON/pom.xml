@@ -16,6 +16,10 @@
 	<properties>
 		<APJP_REMOTE_PYTHON_NAME>APJP_REMOTE_PYTHON</APJP_REMOTE_PYTHON_NAME>
 		<APJP_REMOTE_PYTHON_VERSION>1.0.0-SNAPSHOT</APJP_REMOTE_PYTHON_VERSION>
+		<APJP_REMOTE_PYTHON_DOTCLOUD_NAME>APJP_REMOTE_PYTHON_DOTCLOUD</APJP_REMOTE_PYTHON_DOTCLOUD_NAME>
+		<APJP_REMOTE_PYTHON_DOTCLOUD_VERSION>1.0.0-SNAPSHOT</APJP_REMOTE_PYTHON_DOTCLOUD_VERSION>
+		<APJP_REMOTE_PYTHON_HEROKU_NAME>APJP_REMOTE_PYTHON_HEROKU</APJP_REMOTE_PYTHON_HEROKU_NAME>
+		<APJP_REMOTE_PYTHON_HEROKU_VERSION>1.0.0-SNAPSHOT</APJP_REMOTE_PYTHON_HEROKU_VERSION>
 	</properties>
 	
 	<build>
@@ -37,6 +41,36 @@
 							<attach>true</attach>
 							<descriptors>
 								<descriptor>src/main/assembly/APJP_REMOTE_PYTHON.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+					<execution>
+						<id>APJP_REMOTE_PYTHON_DOTCLOUD</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<finalName>${APJP_REMOTE_PYTHON_DOTCLOUD_NAME}-${APJP_REMOTE_PYTHON_DOTCLOUD_VERSION}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<attach>false</attach>
+							<descriptors>
+								<descriptor>src/main/assembly/APJP_REMOTE_PYTHON_DOTCLOUD.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+					<execution>
+						<id>APJP_REMOTE_PYTHON_HEROKU</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<finalName>${APJP_REMOTE_PYTHON_HEROKU_NAME}-${APJP_REMOTE_PYTHON_HEROKU_VERSION}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<attach>false</attach>
+							<descriptors>
+								<descriptor>src/main/assembly/APJP_REMOTE_PYTHON_HEROKU.xml</descriptor>
 							</descriptors>
 						</configuration>
 					</execution>

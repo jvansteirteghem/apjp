@@ -1,5 +1,7 @@
 PRE-INSTALLATION
 ----------------
+- create DOTCLOUD account (http://www.dotcloud.com/)
+- install DOTCLOUD CLI (http://docs.dotcloud.com/firststeps/)
 
 INSTALLATION
 ------------
@@ -27,8 +29,12 @@ INSTALLATION
 		- APJP.HTTPS.APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_VALUE[3]
 		- APJP.HTTPS.APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_KEY[4]
 		- APJP.HTTPS.APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_VALUE[4]
+- install APJP FOR DOTCLOUD
+	- open CONSOLE
+		- dotcloud create application1
+		- dotcloud push application1
 
 IMPORTANT
 ---------
-- APJP_REMOTE_HTTP_SERVER_REQUEST_URL == http://../HTTP
-- APJP_REMOTE_HTTPS_SERVER_REQUEST_URL == http://../HTTPS
+- APJP_REMOTE_HTTP_SERVER_REQUEST_URL == http://application-id.dotcloud.com/HTTP
+- APJP_REMOTE_HTTPS_SERVER_REQUEST_URL == http://application-id.dotcloud.com/HTTPS

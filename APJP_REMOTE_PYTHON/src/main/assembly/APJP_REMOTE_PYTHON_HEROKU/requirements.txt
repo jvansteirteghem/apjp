@@ -1,0 +1,3 @@
+gunicorn==0.13.4
+pycrypto>=2.3
+webob>=1.1.1

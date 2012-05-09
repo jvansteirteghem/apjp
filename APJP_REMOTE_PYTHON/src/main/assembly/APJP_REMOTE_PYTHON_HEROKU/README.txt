@@ -1,5 +1,7 @@
 PRE-INSTALLATION
 ----------------
+- create HEROKU account (http://devcenter.heroku.com/articles/quickstart)
+- install HEROKU SDK (http://devcenter.heroku.com/articles/quickstart)
 
 INSTALLATION
 ------------
@@ -27,8 +29,17 @@ INSTALLATION
 		- APJP.HTTPS.APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_VALUE[3]
 		- APJP.HTTPS.APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_KEY[4]
 		- APJP.HTTPS.APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_VALUE[4]
+- install APJP FOR HEROKU
+	- open CONSOLE
+		- heroku login
+		- git init
+		- git add .
+		- git commit -m "init"
+		- heroku create --stack cedar
+		- git push heroku master
+		- heroku open
 
 IMPORTANT
 ---------
-- APJP_REMOTE_HTTP_SERVER_REQUEST_URL == http://../HTTP
-- APJP_REMOTE_HTTPS_SERVER_REQUEST_URL == http://../HTTPS
+- APJP_REMOTE_HTTP_SERVER_REQUEST_URL == http://application-id.herokuapp.com/HTTP
+- APJP_REMOTE_HTTPS_SERVER_REQUEST_URL == http://application-id.herokuapp.com/HTTPS
