@@ -8,6 +8,8 @@ INSTALLATION
 - open war\WEB-INF\appengine-web.xml
 	- configure
 		- application-id
+- open war\WEB-INF\APJP_REMOTE.properties
+	- configure
 		- APJP_KEY == generated key
 		- APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_1_KEY
 		- APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_1_VALUE

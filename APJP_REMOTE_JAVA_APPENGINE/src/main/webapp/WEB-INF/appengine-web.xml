@@ -2,30 +2,9 @@
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
 	<application></application>
 	<version>1</version>
+	<threadsafe>true</threadsafe>
 	
 	<system-properties>
 		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
-		<property name="APJP_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_1_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_1_VALUE" value=""/>
-		<property name="APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_2_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_2_VALUE" value=""/>
-		<property name="APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_3_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_3_VALUE" value=""/>
-		<property name="APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_4_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_4_VALUE" value=""/>
-		<property name="APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_5_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_5_VALUE" value=""/>
-		<property name="APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_1_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_1_VALUE" value=""/>
-		<property name="APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_2_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_2_VALUE" value=""/>
-		<property name="APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_3_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_3_VALUE" value=""/>
-		<property name="APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_4_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_4_VALUE" value=""/>
-		<property name="APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_5_KEY" value=""/>
-		<property name="APJP_REMOTE_HTTPS_SERVER_RESPONSE_PROPERTY_5_VALUE" value=""/>
 	</system-properties>
-	
 </appengine-web-app>

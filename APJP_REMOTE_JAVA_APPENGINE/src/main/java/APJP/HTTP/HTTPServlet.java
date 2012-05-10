@@ -12,6 +12,7 @@ You should have received a copy of the GNU General Public License along with thi
 package APJP.HTTP;
 
 import java.io.IOException;
+import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -45,14 +46,25 @@ public class HTTPServlet extends HttpServlet {
 		
 		logger = Logger.getLogger(HTTPServlet.class.getName());
 		
-		APJP_KEY = System.getProperty("APJP_KEY", "");
+		Properties properties = new Properties();
+		
+		try
+		{
+			properties.load(getServletContext().getResourceAsStream("/WEB-INF/APJP_REMOTE.properties"));
+		}
+		catch(Exception e)
+		{
+			throw new ServletException(e);
+		}
+		
+		APJP_KEY = properties.getProperty("APJP_KEY", "");
 		
 		APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_KEY = new String[5];
 		APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_VALUE = new String[5];
 		for(int i = 0; i < APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_KEY.length; i = i + 1)
 		{
-			APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_KEY[i] = System.getProperty("APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_" + (i + 1) + "_KEY", "");
-			APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_VALUE[i] = System.getProperty("APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_" + (i + 1) + "_VALUE", "");
+			APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_KEY[i] = properties.getProperty("APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_" + (i + 1) + "_KEY", "");
+			APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_VALUE[i] = properties.getProperty("APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_" + (i + 1) + "_VALUE", "");
 		}
 	}
 	
