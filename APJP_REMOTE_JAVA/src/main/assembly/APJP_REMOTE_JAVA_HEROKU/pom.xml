@@ -4,7 +4,6 @@
 	<groupId>APJP</groupId>
 	<artifactId>APJP_REMOTE_JAVA</artifactId>
 	<version>${APJP_REMOTE_JAVA_VERSION}</version>
-	<packaging>war</packaging>
 	<name>${APJP_REMOTE_JAVA_NAME}</name>
 	
 	<build>
@@ -19,6 +18,26 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>appassembler-maven-plugin</artifactId>
+				<version>1.1.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals><goal>assemble</goal></goals>
+						<configuration>
+							<assembleDirectory>target</assembleDirectory>
+							<programs>
+								<program>
+									<mainClass>APJP.Main</mainClass>
+									<name>webapp</name>
+								</program>
+							</programs>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 	
@@ -27,19 +46,16 @@
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-servlet</artifactId>
 			<version>7.4.5.v20110725</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-webapp</artifactId>
 			<version>7.4.4.v20110707</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
-			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 </project>

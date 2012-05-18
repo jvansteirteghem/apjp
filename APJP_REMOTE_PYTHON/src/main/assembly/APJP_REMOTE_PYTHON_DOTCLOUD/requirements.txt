@@ -1,2 +1,2 @@
 pycrypto>=2.3
-webob>=1.1.1
+webob==1.1.1

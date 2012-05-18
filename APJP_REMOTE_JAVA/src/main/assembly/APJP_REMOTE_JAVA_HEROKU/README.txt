@@ -5,7 +5,7 @@ PRE-INSTALLATION
 
 INSTALLATION
 ------------
-- open src\main\resources\APJP_REMOTE.properties
+- open src\main\webapp\WEB-INF\APJP_REMOTE.properties
 	- configure
 		- APJP_KEY == generated key
 		- APJP_REMOTE_HTTP_SERVER_RESPONSE_PROPERTY_1_KEY

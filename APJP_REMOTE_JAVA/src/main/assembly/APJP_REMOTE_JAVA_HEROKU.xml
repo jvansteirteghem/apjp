@@ -30,5 +30,13 @@
 			<outputDirectory>/</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
+		<fileSet>
+			<directory>src/main/assembly/APJP_REMOTE_JAVA_HEROKU/src/main/java/APJP</directory>
+			<includes>
+				<include>Main.java</include>
+			</includes>
+			<outputDirectory>/src/main/java/APJP</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
 	</fileSets>
 </assembly>
