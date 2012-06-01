@@ -23,8 +23,26 @@
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
+			<directory>src/main/assembly/APJP_REMOTE_RUBY_HEROKU/public</directory>
+			<includes>
+				<include>README.txt</include>
+			</includes>
+			<outputDirectory>/public</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/assembly/APJP_REMOTE_RUBY_HEROKU/tmp</directory>
+			<includes>
+				<include>README.txt</include>
+			</includes>
+			<outputDirectory>/tmp</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
 			<directory>src/main/assembly/APJP_REMOTE_RUBY_HEROKU</directory>
 			<includes>
+				<include>Gemfile</include>
+				<include>Gemfile.lock</include>
 				<include>Procfile</include>
 				<include>README.txt</include>
 			</includes>

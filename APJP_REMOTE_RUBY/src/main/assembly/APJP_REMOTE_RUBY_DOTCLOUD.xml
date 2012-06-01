@@ -23,9 +23,27 @@
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
+			<directory>src/main/assembly/APJP_REMOTE_RUBY_DOTCLOUD/public</directory>
+			<includes>
+				<include>README.txt</include>
+			</includes>
+			<outputDirectory>/public</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/assembly/APJP_REMOTE_RUBY_DOTCLOUD/tmp</directory>
+			<includes>
+				<include>README.txt</include>
+			</includes>
+			<outputDirectory>/tmp</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
 			<directory>src/main/assembly/APJP_REMOTE_RUBY_DOTCLOUD</directory>
 			<includes>
 				<include>dotcloud.yml</include>
+				<include>Gemfile</include>
+				<include>Gemfile.lock</include>
 				<include>README.txt</include>
 			</includes>
 			<outputDirectory>/</outputDirectory>
