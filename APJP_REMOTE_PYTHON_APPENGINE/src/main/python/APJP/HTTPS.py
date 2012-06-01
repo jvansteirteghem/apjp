@@ -89,9 +89,9 @@ def application(environ, start_response):
     http_response_header = ''
     
     if http_response.version == 10:
-      http_response_header = cipher.encrypt('HTTP/1.0 ' + str(http_response.status) + '\r\n')
+      http_response_header = 'HTTP/1.0 ' + str(http_response.status) + '\r\n'
     else:
-      http_response_header = cipher.encrypt('HTTP/1.1 ' + str(http_response.status) + '\r\n')
+      http_response_header = 'HTTP/1.1 ' + str(http_response.status) + '\r\n'
     
     http_response_headers = http_response.getheaders()
     
@@ -110,15 +110,15 @@ def application(environ, start_response):
             if http_response_header_values3_length == 3:
               http_response_header_value1 = http_response_header_value1 + ', ' + http_response_header_value2
             else:
-              http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value1 + '\r\n')
+              http_response_header = http_response_header + http_response_header_key + ': ' + http_response_header_value1 + '\r\n'
               http_response_header_value1 = http_response_header_value2
-        http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value1 + '\r\n')
+        http_response_header = http_response_header + http_response_header_key + ': ' + http_response_header_value1 + '\r\n'
       else:
-        http_response_header = http_response_header + cipher.encrypt(http_response_header_key + ': ' + http_response_header_value + '\r\n')
+        http_response_header = http_response_header + http_response_header_key + ': ' + http_response_header_value + '\r\n'
     
-    http_response_header = http_response_header + cipher.encrypt('\r\n')
+    http_response_header = http_response_header + '\r\n'
     
-    yield http_response_header
+    yield cipher.encrypt(http_response_header)
     
     while True:
       buffer = http_response.read(5120)
