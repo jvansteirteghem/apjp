@@ -1,0 +1,34 @@
+<assembly>
+	<id>APJP_REMOTE_RUBY</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+			<directory>src/main/ruby</directory>
+			<includes>
+				<include>config.ru</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/ruby/APJP</directory>
+			<includes>
+				<include>HTTP.rb</include>
+				<include>HTTPS.rb</include>
+			</includes>
+			<outputDirectory>/APJP</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/assembly/APJP_REMOTE_RUBY</directory>
+			<includes>
+				<include>README.txt</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+	</fileSets>
+</assembly>

@@ -1,0 +1,35 @@
+<assembly>
+	<id>APJP_REMOTE_RUBY_HEROKU</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+			<directory>src/main/ruby</directory>
+			<includes>
+				<include>config.ru</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/ruby/APJP</directory>
+			<includes>
+				<include>HTTP.rb</include>
+				<include>HTTPS.rb</include>
+			</includes>
+			<outputDirectory>/APJP</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/assembly/APJP_REMOTE_RUBY_HEROKU</directory>
+			<includes>
+				<include>Procfile</include>
+				<include>README.txt</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+	</fileSets>
+</assembly>
