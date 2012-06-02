@@ -120,37 +120,39 @@ class HTTPEnumerable
     
     http_request = nil
     
-    if http_request_method.upcase() == "COPY" then
+    if http_request_method.upcase() == "COPY".upcase() then
       http_request = Net::HTTP::Copy.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "DELETE" then
+    elsif http_request_method.upcase() == "DELETE".upcase() then
       http_request = Net::HTTP::Delete.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "GET" then
+    elsif http_request_method.upcase() == "GET".upcase() then
       http_request = Net::HTTP::Get.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "HEAD" then
+    elsif http_request_method.upcase() == "HEAD".upcase() then
       http_request = Net::HTTP::Head.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "LOCK" then
+    elsif http_request_method.upcase() == "LOCK".upcase() then
       http_request = Net::HTTP::Lock.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "MKCOL" then
+    elsif http_request_method.upcase() == "MKCOL".upcase() then
       http_request = Net::HTTP::Mkcol.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "MOVE" then
+    elsif http_request_method.upcase() == "MOVE".upcase() then
       http_request = Net::HTTP::Move.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "OPTIONS" then
+    elsif http_request_method.upcase() == "OPTIONS".upcase() then
       http_request = Net::HTTP::Options.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "PATCH" then
+    elsif http_request_method.upcase() == "PATCH".upcase() then
       http_request = Net::HTTP::Patch.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "POST" then
+    elsif http_request_method.upcase() == "POST".upcase() then
       http_request = Net::HTTP::Post.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "PROPFIND" then
+    elsif http_request_method.upcase() == "PROPFIND".upcase() then
       http_request = Net::HTTP::Propfind.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "PROPPATCH" then
+    elsif http_request_method.upcase() == "PROPPATCH".upcase() then
       http_request = Net::HTTP::Proppatch.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "PUT" then
+    elsif http_request_method.upcase() == "PUT".upcase() then
       http_request = Net::HTTP::Put.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "TRACE" then
+    elsif http_request_method.upcase() == "TRACE".upcase() then
       http_request = Net::HTTP::Trace.new(http_request_url, http_request_headers)
-    elsif http_request_method.upcase() == "UNLOCK" then
+    elsif http_request_method.upcase() == "UNLOCK".upcase() then
       http_request = Net::HTTP::Unlock.new(http_request_url, http_request_headers)
     end
+    
+    http_request.body = http_request_body
     
     http.request(http_request){ |http_response|
       cipher = OpenSSL::Cipher::Cipher.new("RC4")
@@ -162,7 +164,15 @@ class HTTPEnumerable
       
       http_response.each_header { |http_response_header_key|
         http_response_header_value = http_response[http_response_header_key]
-        http_response_header = http_response_header + http_response_header_key + ": " + http_response_header_value + "\r\n"
+        
+        if http_response_header_key.upcase() == "Set-Cookie".upcase() then
+          http_response_header_values = http_response_header_value.split(", ")
+          for i in 0 .. http_response_header_values.length - 1
+            http_response_header = http_response_header + http_response_header_key + ": " + http_response_header_values[i] + "\r\n"
+          end
+        else
+          http_response_header = http_response_header + http_response_header_key + ": " + http_response_header_value + "\r\n"
+        end
       }
       
       http_response_header = http_response_header + "\r\n"
