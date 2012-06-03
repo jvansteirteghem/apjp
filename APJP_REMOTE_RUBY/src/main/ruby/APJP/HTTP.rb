@@ -167,9 +167,24 @@ class HTTPEnumerable
         
         if http_response_header_key.upcase() == "Set-Cookie".upcase() then
           http_response_header_values = http_response_header_value.split(", ")
-          for i in 0 .. http_response_header_values.length - 1
-            http_response_header = http_response_header + http_response_header_key + ": " + http_response_header_values[i] + "\r\n"
+          http_response_header_value1 = ""
+          for http_response_header_value2 in http_response_header_values
+            if http_response_header_value1 == "" then
+              http_response_header_value1 = http_response_header_value2
+            else
+              http_response_header_values2 = http_response_header_value2.split(";")
+              http_response_header_value3 = http_response_header_values2[0]
+              http_response_header_values3 = http_response_header_value3.split(" ")
+              http_response_header_values3_length = http_response_header_values3.length
+              if http_response_header_values3_length == 3 then
+                http_response_header_value1 = http_response_header_value1 + ", " + http_response_header_value2
+              else
+                http_response_header = http_response_header + http_response_header_key + ": " + http_response_header_value1 + "\r\n"
+                http_response_header_value1 = http_response_header_value2
+              end
+            end
           end
+          http_response_header = http_response_header + http_response_header_key + ": " + http_response_header_value1 + "\r\n"
         else
           http_response_header = http_response_header + http_response_header_key + ": " + http_response_header_value + "\r\n"
         end
