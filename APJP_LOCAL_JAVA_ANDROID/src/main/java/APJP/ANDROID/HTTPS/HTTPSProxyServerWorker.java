@@ -187,6 +187,18 @@ public class HTTPSProxyServerWorker implements Runnable
 								{
 									
 								}
+								finally
+								{
+									try
+									{
+										outputSocket.shutdownInput();
+										outputSocket.shutdownOutput();
+									}
+									catch(Exception e)
+									{
+										
+									}
+								}
 							}
 						};
 						
@@ -208,16 +220,22 @@ public class HTTPSProxyServerWorker implements Runnable
 									{
 										inputSocketOutputStream.write(byteArray1, 0, byteArray1Length);
 									}
-									
-									inputSocket.shutdownInput();
-									inputSocket.shutdownOutput();
-									
-									outputSocket.shutdownInput();
-									outputSocket.shutdownOutput();
 								}
 								catch(Exception e)
 								{
 									
+								}
+								finally
+								{
+									try
+									{
+										inputSocket.shutdownInput();
+										inputSocket.shutdownOutput();
+									}
+									catch(Exception e)
+									{
+										
+									}
 								}
 							}
 						};
