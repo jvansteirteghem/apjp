@@ -8,12 +8,34 @@
 		<fileSet>
 			<directory>src/main/php</directory>
 			<includes>
-				<include>HTTP.php</include>
-				<include>HTTP.properties.php</include>
-				<include>HTTPS.php</include>
-				<include>HTTPS.properties.php</include>
+				<include>index.php</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_PHP_NAME}-${APJP_REMOTE_PHP_VERSION}</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/php/APJP</directory>
+			<includes>
+				<include>APJP.php</include>
+				<include>Application.php</include>
+			</includes>
+			<outputDirectory>/${APJP_REMOTE_PHP_NAME}-${APJP_REMOTE_PHP_VERSION}/APJP</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/php/APJP/HTTP</directory>
+			<includes>
+				<include>Application.php</include>
+			</includes>
+			<outputDirectory>/${APJP_REMOTE_PHP_NAME}-${APJP_REMOTE_PHP_VERSION}/APJP/HTTP</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/php/APJP/HTTPS</directory>
+			<includes>
+				<include>Application.php</include>
+			</includes>
+			<outputDirectory>/${APJP_REMOTE_PHP_NAME}-${APJP_REMOTE_PHP_VERSION}/APJP/HTTPS</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
@@ -21,7 +43,7 @@
 			<includes>
 				<include>README.txt</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_PHP_NAME}-${APJP_REMOTE_PHP_VERSION}</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 	</fileSets>

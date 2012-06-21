@@ -1,16 +1,11 @@
-import APJP.HTTP
-import APJP.HTTPS
-from webob import Request
-from webob import Response
+# APJP, A PHP/JAVA PROXY
+# Copyright (C) 2009-2012 Jeroen Van Steirteghem
+# 
+# This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
-def application(environ, start_response):
-  request = Request(environ)
-  
-  if request.path_info == '/HTTP':
-    return APJP.HTTP.application(environ, start_response)
-  else:
-    if request.path_info == '/HTTPS':
-      return APJP.HTTPS.application(environ, start_response)
-  
-  response = Response(None, None, None, None, request)
-  return response(environ, start_response)
+from APJP import APJP
+from Application import Application

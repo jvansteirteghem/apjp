@@ -10,17 +10,35 @@
 			<includes>
 				<include>wsgi.py</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_PYTHON_DOTCLOUD_NAME}-${APJP_REMOTE_PYTHON_DOTCLOUD_VERSION}</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
 			<directory>src/main/python/APJP</directory>
 			<includes>
 				<include>__init__.py</include>
-				<include>HTTP.py</include>
-				<include>HTTPS.py</include>
+				<include>APJP.py</include>
+				<include>Application.py</include>
 			</includes>
-			<outputDirectory>/APJP</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_PYTHON_DOTCLOUD_NAME}-${APJP_REMOTE_PYTHON_DOTCLOUD_VERSION}/APJP</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/python/APJP/HTTP</directory>
+			<includes>
+				<include>__init__.py</include>
+				<include>Application.py</include>
+			</includes>
+			<outputDirectory>/${APJP_REMOTE_PYTHON_DOTCLOUD_NAME}-${APJP_REMOTE_PYTHON_DOTCLOUD_VERSION}/APJP/HTTP</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/python/APJP/HTTPS</directory>
+			<includes>
+				<include>__init__.py</include>
+				<include>Application.py</include>
+			</includes>
+			<outputDirectory>/${APJP_REMOTE_PYTHON_DOTCLOUD_NAME}-${APJP_REMOTE_PYTHON_DOTCLOUD_VERSION}/APJP/HTTPS</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
@@ -30,7 +48,7 @@
 				<include>requirements.txt</include>
 				<include>README.txt</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_PYTHON_DOTCLOUD_NAME}-${APJP_REMOTE_PYTHON_DOTCLOUD_VERSION}</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 	</fileSets>

@@ -23,7 +23,7 @@
 	</properties>
 	
 	<build>
-		<finalName>${APJP_REMOTE_JAVA_NAME}-${APJP_REMOTE_JAVA_VERSION}</finalName>
+		<finalName>ROOT</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

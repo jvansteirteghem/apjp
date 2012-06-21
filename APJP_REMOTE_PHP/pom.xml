@@ -16,6 +16,8 @@
 	<properties>
 		<APJP_REMOTE_PHP_NAME>APJP_REMOTE_PHP</APJP_REMOTE_PHP_NAME>
 		<APJP_REMOTE_PHP_VERSION>1.0.0-SNAPSHOT</APJP_REMOTE_PHP_VERSION>
+		<APJP_REMOTE_PHP_DOTCLOUD_NAME>APJP_REMOTE_PHP_DOTCLOUD</APJP_REMOTE_PHP_DOTCLOUD_NAME>
+		<APJP_REMOTE_PHP_DOTCLOUD_VERSION>1.0.0-SNAPSHOT</APJP_REMOTE_PHP_DOTCLOUD_VERSION>
 	</properties>
 	
 	<build>
@@ -37,6 +39,21 @@
 							<attach>true</attach>
 							<descriptors>
 								<descriptor>src/main/assembly/APJP_REMOTE_PHP.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+					<execution>
+						<id>APJP_REMOTE_PHP_DOTCLOUD</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<finalName>${APJP_REMOTE_PHP_DOTCLOUD_NAME}-${APJP_REMOTE_PHP_DOTCLOUD_VERSION}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<attach>true</attach>
+							<descriptors>
+								<descriptor>src/main/assembly/APJP_REMOTE_PHP_DOTCLOUD.xml</descriptor>
 							</descriptors>
 						</configuration>
 					</execution>

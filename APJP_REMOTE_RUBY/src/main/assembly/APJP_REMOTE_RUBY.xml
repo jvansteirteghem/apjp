@@ -10,16 +10,32 @@
 			<includes>
 				<include>config.ru</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_RUBY_NAME}-${APJP_REMOTE_RUBY_VERSION}</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
 			<directory>src/main/ruby/APJP</directory>
 			<includes>
-				<include>HTTP.rb</include>
-				<include>HTTPS.rb</include>
+				<include>APJP.rb</include>
+				<include>Application.rb</include>
 			</includes>
-			<outputDirectory>/APJP</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_RUBY_NAME}-${APJP_REMOTE_RUBY_VERSION}/APJP</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/ruby/APJP/HTTP</directory>
+			<includes>
+				<include>Application.rb</include>
+			</includes>
+			<outputDirectory>/${APJP_REMOTE_RUBY_NAME}-${APJP_REMOTE_RUBY_VERSION}/APJP/HTTP</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/ruby/APJP/HTTPS</directory>
+			<includes>
+				<include>Application.rb</include>
+			</includes>
+			<outputDirectory>/${APJP_REMOTE_RUBY_NAME}-${APJP_REMOTE_RUBY_VERSION}/APJP/HTTPS</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
@@ -27,7 +43,7 @@
 			<includes>
 				<include>README.txt</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_RUBY_NAME}-${APJP_REMOTE_RUBY_VERSION}</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 	</fileSets>

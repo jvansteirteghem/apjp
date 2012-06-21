@@ -6,7 +6,7 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<dependencySets>
 		<dependencySet>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_KEY_JAVA_NAME}-${APJP_KEY_JAVA_VERSION}</outputDirectory>
 		</dependencySet>
 	</dependencySets>
 	<fileSets>
@@ -16,7 +16,7 @@
 				<include>APJP_KEY.bat</include>
 				<include>APJP_KEY.sh</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_KEY_JAVA_NAME}-${APJP_KEY_JAVA_VERSION}</outputDirectory>
 			<filtered>true</filtered>
 		</fileSet>
 		<fileSet>
@@ -24,7 +24,7 @@
 			<includes>
 				<include>README.txt</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_KEY_JAVA_NAME}-${APJP_KEY_JAVA_VERSION}</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 	</fileSets>

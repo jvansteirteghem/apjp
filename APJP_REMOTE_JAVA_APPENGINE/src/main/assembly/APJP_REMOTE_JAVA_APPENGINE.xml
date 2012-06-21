@@ -7,7 +7,7 @@
 	<fileSets>
 		<fileSet>
 			<directory>target/${APJP_REMOTE_JAVA_APPENGINE_NAME}-${APJP_REMOTE_JAVA_APPENGINE_VERSION}</directory>
-			<outputDirectory>/war</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_JAVA_APPENGINE_NAME}-${APJP_REMOTE_JAVA_APPENGINE_VERSION}/war</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 		<fileSet>
@@ -15,7 +15,7 @@
 			<includes>
 				<include>README.txt</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_JAVA_APPENGINE_NAME}-${APJP_REMOTE_JAVA_APPENGINE_VERSION}</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 	</fileSets>

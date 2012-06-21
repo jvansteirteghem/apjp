@@ -4,10 +4,8 @@ PRE-INSTALLATION
 
 INSTALLATION
 ------------
-- copy
-	- APJP_KEY.bat
-	- APJP_KEY-X.X.X.jar
-	- APJP_KEY.sh
+- unzip APJP_KEY-X.X.X.zip
+- open APJP_KEY-X.X.X
 - execute APJP_KEY.bat or APJP_KEY.sh
 
 IMPORTANT

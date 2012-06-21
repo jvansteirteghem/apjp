@@ -4,19 +4,22 @@
 		<format>zip</format>
 	</formats>
 	<includeBaseDirectory>false</includeBaseDirectory>
-	<dependencySets>
-		<dependencySet>
-			<outputDirectory>/</outputDirectory>
-		</dependencySet>
-	</dependencySets>
 	<fileSets>
+		<fileSet>
+			<directory>target</directory>
+			<includes>
+				<include>ROOT.war</include>
+			</includes>
+			<outputDirectory>/${APJP_REMOTE_JAVA_DOTCLOUD_NAME}-${APJP_REMOTE_JAVA_DOTCLOUD_VERSION}</outputDirectory>
+			<filtered>false</filtered>
+		</fileSet>
 		<fileSet>
 			<directory>src/main/assembly/APJP_REMOTE_JAVA_DOTCLOUD</directory>
 			<includes>
 				<include>dotcloud.yml</include>
 				<include>README.txt</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_REMOTE_JAVA_DOTCLOUD_NAME}-${APJP_REMOTE_JAVA_DOTCLOUD_VERSION}</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 	</fileSets>

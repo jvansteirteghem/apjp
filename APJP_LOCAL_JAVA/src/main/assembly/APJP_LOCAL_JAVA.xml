@@ -6,7 +6,7 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<dependencySets>
 		<dependencySet>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_LOCAL_JAVA_NAME}-${APJP_LOCAL_JAVA_VERSION}</outputDirectory>
 		</dependencySet>
 	</dependencySets>
 	<fileSets>
@@ -18,7 +18,7 @@
 				<include>APJP_LOCAL_UI.bat</include>
 				<include>APJP_LOCAL_UI.sh</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_LOCAL_JAVA_NAME}-${APJP_LOCAL_JAVA_VERSION}</outputDirectory>
 			<filtered>true</filtered>
 		</fileSet>
 		<fileSet>
@@ -28,7 +28,7 @@
 				<include>APJP_LOCAL.properties</include>
 				<include>README.txt</include>
 			</includes>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/${APJP_LOCAL_JAVA_NAME}-${APJP_LOCAL_JAVA_VERSION}</outputDirectory>
 			<filtered>false</filtered>
 		</fileSet>
 	</fileSets>
