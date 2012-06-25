@@ -41,6 +41,7 @@
 		<fileSet>
 			<directory>src/main/assembly/APJP_REMOTE_PHP_DOTCLOUD</directory>
 			<includes>
+				<include>dotcloud.yml</include>
 				<include>README.txt</include>
 			</includes>
 			<outputDirectory>/${APJP_REMOTE_PHP_DOTCLOUD_NAME}-${APJP_REMOTE_PHP_DOTCLOUD_VERSION}</outputDirectory>
