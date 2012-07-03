@@ -1,8 +1,6 @@
 APJP: A PHP/JAVA PROXY
 ----------------------
-APJP is a proxy written in PHP and JAVA.
-
-The APJP project page: http://code.google.com/p/apjp/.
+APJP is a proxy written in JAVA, PHP, PYTHON and RUBY.
 
 INSTALLATION
 ------------
