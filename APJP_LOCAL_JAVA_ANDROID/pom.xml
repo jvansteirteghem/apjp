@@ -4,18 +4,22 @@
 	<parent>
 		<groupId>APJP</groupId>
 		<artifactId>APJP</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
 	
 	<groupId>APJP</groupId>
 	<artifactId>APJP_LOCAL_JAVA_ANDROID</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>apk</packaging>
 	<name>APJP_LOCAL_JAVA_ANDROID</name>
 	
 	<properties>
 		<APJP_LOCAL_JAVA_ANDROID_NAME>APJP_LOCAL_JAVA_ANDROID</APJP_LOCAL_JAVA_ANDROID_NAME>
-		<APJP_LOCAL_JAVA_ANDROID_VERSION>1.0.0-SNAPSHOT</APJP_LOCAL_JAVA_ANDROID_VERSION>
+		<APJP_LOCAL_JAVA_ANDROID_VERSION>1.0.0</APJP_LOCAL_JAVA_ANDROID_VERSION>
+		<APJP_LOCAL_JAVA_ANDROID_KEYSTORE></APJP_LOCAL_JAVA_ANDROID_KEYSTORE>
+		<APJP_LOCAL_JAVA_ANDROID_KEYSTORE_ALIAS></APJP_LOCAL_JAVA_ANDROID_KEYSTORE_ALIAS>
+		<APJP_LOCAL_JAVA_ANDROID_KEYSTORE_KEY_PASSWORD></APJP_LOCAL_JAVA_ANDROID_KEYSTORE_KEY_PASSWORD>
+		<APJP_LOCAL_JAVA_ANDROID_KEYSTORE_STORE_PASSWORD></APJP_LOCAL_JAVA_ANDROID_KEYSTORE_STORE_PASSWORD>
 	</properties>
 	
 	<build>
@@ -28,6 +32,41 @@
 					<source>1.6</source>
 					<target>1.6</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<artifactId>android-maven-plugin</artifactId>
+				<version>3.1.1</version>
+				<configuration>
+					<sdk>
+						<platform>3</platform>
+					</sdk>
+					<sign>
+						<debug>false</debug>
+					</sign>
+					<undeployBeforeDeploy>true</undeployBeforeDeploy>
+				</configuration>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jarsigner-plugin</artifactId>
+				<version>1.2</version>
+				<executions>
+					<execution>
+						<id>APJP_LOCAL_JAVA_ANDROID</id>
+						<phase>package</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+						<configuration>
+							<keystore>${APJP_LOCAL_JAVA_ANDROID_KEYSTORE}</keystore>
+							<alias>${APJP_LOCAL_JAVA_ANDROID_KEYSTORE_ALIAS}</alias>
+							<keypass>${APJP_LOCAL_JAVA_ANDROID_KEYSTORE_KEY_PASSWORD}</keypass>
+							<storepass>${APJP_LOCAL_JAVA_ANDROID_KEYSTORE_STORE_PASSWORD}</storepass>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -49,18 +88,6 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
-				<artifactId>android-maven-plugin</artifactId>
-				<version>3.1.1</version>
-				<configuration>
-					<sdk>
-						<platform>3</platform>
-					</sdk>
-					<undeployBeforeDeploy>true</undeployBeforeDeploy>
-				</configuration>
-				<extensions>true</extensions>
 			</plugin>
 		</plugins>
 	</build>

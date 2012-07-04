@@ -4,18 +4,18 @@
 	<parent>
 		<groupId>APJP</groupId>
 		<artifactId>APJP</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
 	
 	<groupId>APJP</groupId>
 	<artifactId>APJP_REMOTE_JAVA_APPENGINE</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>war</packaging>
 	<name>APJP_REMOTE_JAVA_APPENGINE</name>
 	
 	<properties>
 		<APJP_REMOTE_JAVA_APPENGINE_NAME>APJP_REMOTE_JAVA_APPENGINE</APJP_REMOTE_JAVA_APPENGINE_NAME>
-		<APJP_REMOTE_JAVA_APPENGINE_VERSION>1.0.0-SNAPSHOT</APJP_REMOTE_JAVA_APPENGINE_VERSION>
+		<APJP_REMOTE_JAVA_APPENGINE_VERSION>1.0.0</APJP_REMOTE_JAVA_APPENGINE_VERSION>
 	</properties>
 	
 	<build>

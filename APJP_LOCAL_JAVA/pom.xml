@@ -4,18 +4,18 @@
 	<parent>
 		<groupId>APJP</groupId>
 		<artifactId>APJP</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
 	
 	<groupId>APJP</groupId>
 	<artifactId>APJP_LOCAL_JAVA</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<name>APJP_LOCAL_JAVA</name>
 	
 	<properties>
 		<APJP_LOCAL_JAVA_NAME>APJP_LOCAL_JAVA</APJP_LOCAL_JAVA_NAME>
-		<APJP_LOCAL_JAVA_VERSION>1.0.0-SNAPSHOT</APJP_LOCAL_JAVA_VERSION>
+		<APJP_LOCAL_JAVA_VERSION>1.0.0</APJP_LOCAL_JAVA_VERSION>
 	</properties>
 	
 	<build>
