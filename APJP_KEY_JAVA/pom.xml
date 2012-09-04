@@ -9,13 +9,13 @@
 	
 	<groupId>APJP</groupId>
 	<artifactId>APJP_KEY_JAVA</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 	<name>APJP_KEY_JAVA</name>
 	
 	<properties>
 		<APJP_KEY_JAVA_NAME>APJP_KEY_JAVA</APJP_KEY_JAVA_NAME>
-		<APJP_KEY_JAVA_VERSION>1.0.0</APJP_KEY_JAVA_VERSION>
+		<APJP_KEY_JAVA_VERSION>1.0.1</APJP_KEY_JAVA_VERSION>
 	</properties>
 	
 	<build>
